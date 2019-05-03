@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MVCApplication</display-name>
+  <servlet>
+    <display-name>AccountantLogin</display-name>
+    <servlet-name>AccountantLogin</servlet-name>
+    <servlet-class>com.feemanagement.Model.AccountantLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>AdminLogin</display-name>
+    <servlet-name>AdminLogin</servlet-name>
+    <servlet-class>com.feemanagement.Model.AdminLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>AccountantController</display-name>
+    <servlet-name>AccountantController</servlet-name>
+    <servlet-class>com.feemanagement.Model.AccountantController</servlet-class>
+    <init-param>
+            <param-name>contextConfigLocation</param-name><param-value>/WEB-INF/config/Beans.xml</param-value></init-param>
+  </servlet>
+  <servlet>
+    <display-name>StudentController</display-name>
+    <servlet-name>StudentController</servlet-name>
+    <servlet-class>com.feemanagement.Model.StudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>AccountantController</servlet-name>
+        <url-pattern>/Add_Accountant</url-pattern>
+        
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountantController</servlet-name>
+        <url-pattern>/ViewAccountant</url-pattern>
+        
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>AccountantController</servlet-name>
+        <url-pattern>/EditAccountant</url-pattern>
+        
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>AccountantController</servlet-name>
+        <url-pattern>/DeleteAccountant</url-pattern>
+        
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/AddStudent</url-pattern>
+        
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/ViewStudent</url-pattern>
+        
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/EditStudent</url-pattern>
+        
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/DueFee</url-pattern>
+        
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/DeleteStudent</url-pattern>
+        
+    </servlet-mapping>
+    
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
