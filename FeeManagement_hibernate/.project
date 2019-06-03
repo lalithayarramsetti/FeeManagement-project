@@ -6,15 +6,6 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<name> srini org.eclipse.jdt.core.javabuilder</name>
-=======
-			<name>master org.eclipse.jdt.core.javabuilder</name>
->>>>>>> refs/remotes/origin/master
-=======
-			<name>master org.eclipse.jdt.core.javabuilder</name>
->>>>>>> refs/remotes/origin/master
 			<arguments>
 			</arguments>
 		</buildCommand>
